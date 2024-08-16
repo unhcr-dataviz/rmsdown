@@ -1,0 +1,235 @@
+---
+title: "Results Monitoring Surveys"
+subtitle: "Country Year"
+output: rmsdown::paged_report
+paged-footnotes: true
+links-to-footnotes: true
+toc-title: "Contents"
+# uncomment this line to produce HTML and PDF in RStudio:
+# knit: pagedown::chrome_print
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  collapse = TRUE,
+  comment = "#>",
+  dev = "svglite",
+  fig.width = 6.8,
+  fig.asp = .618,
+  fig.align = "center",
+  out.width = "100%"
+)
+```
+
+```{r package, include=FALSE}
+# install.packages("pak")
+
+# pak::pak("tidyverse")
+library(tidyverse)
+# pak::pak("scales")
+library(scales)
+# pak::pak("unhcrthemes")
+library(unhcrthemes)
+```
+
+```{r data, include=FALSE}
+# upload data
+
+# clean data (if necessary)
+
+# summary values
+# eg. number of interviews
+```
+
+# Executive Summary
+
+A short summary for readers to become `r num_int` acquainted with the key messages without having to read the entire report. It should include the assessment objectives, methods used, key findings, conclusions, and recommendations. Use bullet points and refer to relevant chapters so readers can find more detail if required.
+
+### Key Findings
+
+* item 1
+* item 2
+* item 3
+
+### Recommandations
+
+* Secure adequate financial resources to meet the needs.
+* Encourage the national authorities to assume a leading role in the humanitarian response.
+* Scale up the services provided.
+* Prioritize key activities to ensure proper protection of the most vulnerable individuals.
+* Focus on the lowest performance and categorize critical gaps.
+* item 
+* item 
+
+# Acknowledgements
+
+*Acknowledgement of all organizations participating in the needs assessment, including agencies, NGOs, government entities, and academic institutions*
+
+**Firstname Lastname**, Title of person and country, 
+
+name@email.org
+
+**Firstname Lastname**, Title of person and country, 
+
+name@email.org
+
+
+:::{.section-title}
+# Introduction
+:::
+
+## Results Monitoring Surveys
+
+:::{.lead  .mb-5}
+Overall and specific objectives and focus of the Results Monitoring Surveys, including the coverage (populations, sectors, and geographic areas) and the types of decisions need to be informed.
+:::
+
+Since the outbreak of the civil war in 2013, the crisis in South Sudan has worsened in various areas, including personal safety, protection, food security, livelihoods, health, shelter, and sanitation. Many people have been forced to flee their homes in search of a safer and more stable locations, resulting in significant displacements. Adding to the conflict, severe flooding has further strained the already poor infrastructure, disrupting the supply chain and causing damage to people's livelihoods and properties. As a result, impoverished individuals have become increasingly vulnerable and marginalized, residing in isolated rural communities. Access to essential services remains limited, and the humanitarian situation is a genuine cause for concern.
+
+In the recent course of events, the 2023 Sudan crisis significantly worsened the already dire humanitarian conditions in South Sudan due to several interconnected factors: the conflict led to mass displacement within the country, with over 1 million people fleeing to neighbouring countries like South Sudan. This influx placed an immense strain on South Sudan's limited resources and infrastructure, particularly in areas already grappling with internal displacement from previous conflicts. Moreover, the crisis disrupted critical trade routes and humanitarian corridors between Sudan and South Sudan, leading to shortages of essential supplies like food, medicine, and fuel. This resulted in price hikes, exacerbating existing food insecurity, and making aid delivery more difficult and expensive. In addition, the international community's focus shifted towards addressing the crisis in Sudan, leading to a decrease in funding and attention towards South Sudan's ongoing humanitarian needs. It limited the capacity of aid organizations to effectively respond to the growing challenges.
+The latest developments and the shift of priorities in terms of the response plans and main activities may have a significant effect on the 2023 results in comparison to 2022 results.
+
+South Sudan faces a daunting reality: with 11.1 million people as per the latest 2023 estimations by UNFPA, it struggles against widespread poverty and illiteracy.
+Yet, hope persists. Recognizing the dire situation, the international community, including UN agencies, has joined forces with the South Sudanese government. Together, they strive to alleviate the suffering by providing aid and support across various sectors. This collaboration aims to mitigate the effects of poverty, illiteracy, and other pressing issues, ultimately offering a helping hand to the millions affected.
+
+UNHCR in South Sudan prioritizes the well-being of those most affected by conflict and displacement. Driven by a commitment to protect and assist vulnerable people, their actions are guided by evidence-based decision-making. Recognizing the crucial role of data, UNHCR globally implemented the Results-Monitoring Survey (RMS) in 2022 to create the baseline data of the impact and outcome indicators. As this is an annual approach, the exercise was replicated in 2023. This methodology tracks progress and impact against the baseline data, solidifying UNHCR position as a trusted leader on refugee and displacement data.
+
+:::{.section-title}
+# Methods
+:::
+
+## Data Collection
+
+Furthermore, provide some information about the data collection methods and an analysis plan annex that operationalizes the analytical framework and details questions, data collections methods and sources for each information element sought, as well as how the information have been analysed.
+
+This field work report presents the process of implementing the 2023 Results Monitoring Survey (RMS) conducted by UNHCR South Sudan, with support from the Regional Bureau of the East, Horn and Great Lakes of Africa and guidance from UN Headquarters. The RMS serves as a tool to measure the progress of country operations using impact and outcome indicators. 
+
+The survey was conducted using the computer-assisted personal interviews (CAPI) method at the County level across 9 states of South Sudan, including 41 Counties. UNHCR, with the support of its partners, reached 6,266 households through a simple random sampling method and, in some cases, based on a set list provided by the local authorities (RRC). The survey delves into key areas: mobility, disability, housing, basic needs, safety, income, and gender-based violence, providing insights into life for Internally Displaced Persons (IDPs).
+   
+## Sampling strategy 
+
+Type of sampling design and rationale for this design. Sample size and locations. Deviation from the original sampling strategy, including non-response rate and replacement method. More detailed information such as the sample plan can be annexed.
+
+**Map of the country (South Sudan in this case) that demonstrates data collection locations**
+
+The target population groups, covered within RMS 2023, are the internally displaced persons (IDPs)1 and Refugees Returnees2.
+According to the latest IOM Displacement Mobility Tracking (DTM Round 14), over 2 million IDPs were mapped and over 530,000 returnees were recorded throughout 2023.
+
+## Enumerator and training
+
+Explain the profile of the enumerators/survey firm and how enumerators were trained.
+
+Following RMS 2022, UNHCR incorporated the RMS 2023 within the partnership agreements with different partners operating across South Sudan to ensure their re-engagement and continuity to carry out this activity. Since most of the field enumerators were familiar with the RMS methodology. This allowed to further strengthen their capacity and manifest a strong command during the data collection phase.
+
+The MFT (Multi-functional Team) members approached the focal person of each relevant partner to confirm their preparedness to launch this exercise. Both sides discussed the needs in terms of workforce, budgeting, provision of trainings, provision of materials and reached to an agreement on the overall workplan and timeline.
+
+
+In coordination with the UNHCR field offices, MFT members organized and successfully delivered 6 training sessions in 5 locations: Juba, Yei, Wau, Yambio and Bentiu in which an extensive practical use of the devices, a simulation of the data collection exercise and data protection policies were offered. Subsequently, UNHCR managed to adequately train a total number of 93 enumerators.
+
+
+## Workplan
+
+Timeline of different phases of the assessment, including training, pilot phase, primary data collection (if any) and analysis.
+
+The field work covered 9 states of South Sudan. The data collection took place from 03 December 2023 to 07 February 2024 in 41 counties.
+
+## Limitations
+
+Any known limitations of the survey approach and findings, including sources of potential bias or error. 
+
+
+The complex context of South Sudan does not provide the right conditions for the implementation of humanitarian activities in a safe and uninterrupted manner. In this year’s exercise, many factors impeded the data collection at different levels:\
+
+* *Insecurity*: Due to insecurity in Western Bahr el Ghazal, namely, Wau-Kuajok road, the activity was suspended until the movement restrictions were lifted.
+* *Mobility*: Due to the flooding, the road to Adok port was impassable with limited means of transportation. The enumerators had to take motorbikes services at a significant higher cost.
+
+* *Internet reliability*: In some remote areas, internet connectivity was entirely absent or highly poor. Under this condition, the field enumerators were collecting data, in these locations, off-line. As the uploading took place at a later stage, The data quality check could not be done in real-time.
+
+* *Questionnaire length*: The bigger the family size is, the longer the interview lasts. Some respondents
+
+* *Assumptions*: Some respondents expected to be paid after the personal interview.
+
+* *Technical issues*: Some tablets were unable to connect to Internet and had to be switched off and on several times
+
+:::{.section-title}
+# Findings
+:::
+
+## Demographics
+
+The total sample consisted of 6,268 households. Of these households, were internally displaced persons (IDPs) and 2,292 were refugee returnees. A total of individuals were interviewed, with more than half (55%) being female and (45%) being male. Among the interviewed individuals, 65% fell between the ages of 18 and 59. Children comprised the largest age group at 33%, while individuals over 60 years old accounted for the smallest portion (2%) of the population.
+
+## Realizing Rights in Safe Environments
+
+### 2.2 Proportion of PoCs residing in physically safe and secure settlements with access to basic facilities
+
+To facilitate measurement specific to UNHCR, four basic services are considered for this indicator: shelter, drinking water, energy (access to electricity) and health in addition to the security. All of these basic services must be available to people for it to be considered that they have access to basic services.
+
+A table showing electricity, healthcare, drinking water and shelter ( bar chart) by population groups
+
+A table with CI, percentages - w/out weights by population groups and available disaggregation values for the final indicator value 
+
+### 2.3 Proportion of PoC with access to health services. 
+
+## Empowering Communities and Achieving Gender Equality
+
+### 3.2a Proportion of PoC enrolled in primary education
+
+- Facetted bar chart, df = ind,  y = house type, x = percent, facet = pop_typ 
+
+3.2b Proportion of PoC enrolled in secondary education
+3.3 Proportion of PoC feeling safe walking alone in their neighborhood. 
+
+
+## Access to Territory, Registration and Documentation
+
+1.2 Proportion of children <5 years whose birth have been registered with a civil authority. 
+1.3 Proportion of PoC with legally recognized identity documents or credentials
+
+## Gender-based Violence
+
+4.1 Proportion of PoC who know where to access available GBV services. 
+4.2 Proportion of PoC who do not accept violence against women.
+
+## Child Protection
+
+5.2 Proportion of children who participate in community-based child protection programmes. 
+
+## Well-being and Basic Needs
+
+8.2 Proportion of PoC with primary reliance on clean (cooking) fuels and technology. 
+
+## Sustainable housing and Settlements
+
+9.1 Proportion of PoC living in habitable and affordable housing. 
+9.2 Proportion of PoC that have energy to ensure lighting. 
+
+## Healthy Lives
+
+10.1 Proportion of children 9mo-5years who have received measles vaccination. 
+10.2 Proportion of births attended by skilled health personnel. 
+
+## Clean Water,Sanitation and Hygiene
+
+12.1 Proportion of PoC using at least basic drinking water services. 
+12.2 Proportion of PoC with access to a safe household toilet. 
+
+## Self Reliance, Economic Inclusion and Livelihoods
+
+13.1 Proportion of PoC with an account at a bank or other financial institution or with a mobile-money service provider. 
+13.2 Proportion of PoC who self-report positive changes in their income compared to previous year. 
+13.3 Proportion of PoC (working age) who are unemployed. 
+
+## Local Integration and other Local Solutions
+
+16.1 Proportion of PoC with secure tenure rights and/or property rights to housing and/or land. 
+16.2 Proportion of PoC covered by social protection floors/systems.
+
+:::{.section-title}
+# Tables
+:::
+
+## All needed tables
