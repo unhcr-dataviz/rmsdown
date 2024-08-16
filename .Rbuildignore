@@ -1,2 +1,4 @@
 ^rmsdown\.Rproj$
 ^\.Rproj\.user$
+^README\.Rmd$
+^LICENSE\.md$
