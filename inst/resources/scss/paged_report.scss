@@ -246,6 +246,9 @@ h1.subtitle {
 .level1 > .level2 {
   break-before: page;
 }
+.level2 {
+  break-after: page;
+}
 .front-matter-container  .front-matter {
   page: frontmatter;
 }
