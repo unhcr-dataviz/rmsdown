@@ -5,14 +5,20 @@
 \title{Function for RMS report paged template}
 \usage{
 paged_report(
+  front_img = NULL,
+  img_to_dark = FALSE,
   other_css = NULL,
   toc = TRUE,
-  toc_depth = 2,
+  toc_depth = 3,
   number_sections = FALSE,
   ...
 )
 }
 \arguments{
+\item{front_img}{Cover image}
+
+\item{img_to_dark}{Darken cover image}
+
 \item{other_css}{Add extra css}
 
 \item{toc}{Table of content}

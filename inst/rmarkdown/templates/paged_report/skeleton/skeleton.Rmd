@@ -46,7 +46,7 @@ library(unhcrthemes)
 
 # Executive Summary
 
-A short summary for readers to become `r num_int` acquainted with the key messages without having to read the entire report. It should include the assessment objectives, methods used, key findings, conclusions, and recommendations. Use bullet points and refer to relevant chapters so readers can find more detail if required.
+A short summary for readers to become acquainted with the key messages without having to read the entire report. It should include the assessment objectives, methods used, key findings, conclusions, and recommendations. Use bullet points and refer to relevant chapters so readers can find more detail if required.
 
 ### Key Findings
 
@@ -77,9 +77,9 @@ name@email.org
 name@email.org
 
 
-:::{.section-title}
-# Introduction
-:::
+###### [1.]{.big-num} Introduction {.section-title}
+
+# Introduction {.hide-h1}
 
 ## Results Monitoring Surveys
 
@@ -97,9 +97,9 @@ Yet, hope persists. Recognizing the dire situation, the international community,
 
 UNHCR in South Sudan prioritizes the well-being of those most affected by conflict and displacement. Driven by a commitment to protect and assist vulnerable people, their actions are guided by evidence-based decision-making. Recognizing the crucial role of data, UNHCR globally implemented the Results-Monitoring Survey (RMS) in 2022 to create the baseline data of the impact and outcome indicators. As this is an annual approach, the exercise was replicated in 2023. This methodology tracks progress and impact against the baseline data, solidifying UNHCR position as a trusted leader on refugee and displacement data.
 
-:::{.section-title}
-# Methods
-:::
+###### [2.]{.big-num} Methods {.section-title}
+
+# Methods {.hide-h1}
 
 ## Data Collection
 
@@ -154,9 +154,9 @@ The complex context of South Sudan does not provide the right conditions for the
 
 * *Technical issues*: Some tablets were unable to connect to Internet and had to be switched off and on several times
 
-:::{.section-title}
-# Findings
-:::
+###### [3.]{.big-num} Findings {.section-title}
+
+# Findings {.hide-h1}
 
 ## Demographics
 
@@ -228,8 +228,8 @@ A table with CI, percentages - w/out weights by population groups and available 
 16.1 Proportion of PoC with secure tenure rights and/or property rights to housing and/or land. 
 16.2 Proportion of PoC covered by social protection floors/systems.
 
-:::{.section-title}
-# Tables
-:::
+###### [4.]{.big-num} Tables {.section-title}
+
+# Tables {.hide-h1}
 
 ## All needed tables
