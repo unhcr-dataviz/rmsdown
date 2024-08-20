@@ -1,7 +1,10 @@
 ---
 title: "Results Monitoring Surveys"
 subtitle: "Country Year"
-output: rmsdown::paged_report
+output: 
+  rmsdown::paged_report:
+    front_img:
+    img_to_dark: false
 paged-footnotes: true
 links-to-footnotes: true
 toc-title: "Contents"
