@@ -119,7 +119,7 @@ h1.subtitle {
     font-size: $font-size-base * 4;
     text-transform: uppercase;
   }
-  
+
 }
 
 // Frontmatter page layout
@@ -199,10 +199,10 @@ h1.subtitle {
   break-before: avoid !important;
 }
 .section > h1,
-.section > h2, 
-.section > h3, 
-.section > h4, 
-.section > h5, 
+.section > h2,
+.section > h3,
+.section > h4,
+.section > h5,
 .section > h6 {
   break-after: avoid;
 }
@@ -305,8 +305,57 @@ a[href^="http"]:not([class="uri"])::after {
   content: " (page " target-counter(attr(href), page, lower-roman) ")";
 }
 
-// TODO blockquote
-// TODO captions
+// Blockquote
+blockquote {
+  quotes: "“" "”" "‘" "’";
+  border-left: none;
+  padding: .5rem;
+}
+
+blockquote>:last-child {
+  font-weight: 700;
+  color: $body-color;
+  font-size: $font-size-base;
+  font-style: normal;
+}
+
+blockquote>:first-child,
+blockquote>:only-child {
+  font-size: $font-size-base * 1.25;
+  font-weight: 400;
+  color: $primary;
+  font-style: italic;
+  margin-bottom: .35rem;
+}
+
+blockquote>:first-child::before,
+blockquote>:only-child::before {
+  content: open-quote;
+  font-style: normal;
+
+}
+
+blockquote>:first-child::after,
+blockquote>:only-child::after {
+  content: close-quote;
+  font-style: normal;
+}
+
+// Captions
+caption,
+.caption {
+  font-size: $font-size-base * .825;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  color: $secondary;
+  text-align: left;
+}
+
+.figure {
+  .caption {
+    padding-top: .35rem;
+  }
+}
 
 // Footnotes
 .footnote-area {
@@ -392,10 +441,20 @@ a[href^="http"]:not([class="uri"])::after {
   }
 }
 
-// TODO columns layout
+// Columns layout
+// 2 columns
 .col-2 {
-  columns: 2;
+  column-count: 2;
   column-gap: 7mm;
+  h1, .h1,
+  h2, .h2 {
+    column-span: all;
+  }
+}
+// Clean columns
+.col-span {
+  column-span: all;
+  margin-top: 1rem;
 }
 
 // --------------------- Interface ---------------------------
