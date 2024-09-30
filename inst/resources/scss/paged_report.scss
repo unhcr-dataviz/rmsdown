@@ -408,24 +408,49 @@ caption,
   }
 }
 
+// LOT & LOF
+.lot, .lof {
+  a{
+    font-size: $font-size-base;
+    color: $black;
+    display: flex;
+    align-items: baseline;
+  }
+
+  li {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }
+
+  .leaders {
+    flex-grow: 1;
+    margin: 0 .5rem;
+    overflow: hidden;
+  }
+
+  .leaders::after {
+    content: "";
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid #000;
+  }
+}
+
+// Before and after TOC, LOT & LOF
 .toc a::after, .lot a::after, .lof a::after {
-  /* content: leader(dotted) target-counter(attr(href), page); */
   content: target-counter(attr(href), page);
   float: right;
 }
-// TODO finalize toc, lotm, lof styles
+
 .lot a::before {
   content: "Table ";
+  margin-right: .25rem;
 }
 .lof a::before {
   content: "Figure ";
+  margin-right: .25rem;
 }
-// .lot .leaders::before, .lof .leaders::before {
-//   float: left;
-//   width: 0;
-//   white-space: nowrap;
-//   content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
-// }
 
 // Abbreviations
 .loa dl {
