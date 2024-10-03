@@ -28,7 +28,7 @@
 simple_bar_chart <- function(
     df, cat, val,
     title = "Bar Chart", caption = "Notes", chr_wrap = NULL,
-    percentage = FALSE, bar_color = NULL, lbl_threshold = NULL) {
+    percentage = TRUE, bar_color = NULL, lbl_threshold = NULL) {
   # Wrap cat labels if chr_wrap is provided
   if (!is.null(chr_wrap)) {
     df[[cat]] <- stringr::str_wrap(df[[cat]], width = chr_wrap)
