@@ -11,7 +11,7 @@ simple_bar_chart(
   title = "Bar Chart",
   caption = "Notes",
   chr_wrap = NULL,
-  percentage = FALSE,
+  percentage = TRUE,
   bar_color = NULL,
   lbl_threshold = NULL
 )

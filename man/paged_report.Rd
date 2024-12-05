@@ -7,6 +7,7 @@
 paged_report(
   front_img = NULL,
   img_to_dark = FALSE,
+  back_html = TRUE,
   other_css = NULL,
   toc = TRUE,
   toc_depth = 3,
@@ -18,6 +19,8 @@ paged_report(
 \item{front_img}{Cover image}
 
 \item{img_to_dark}{Darken cover image}
+
+\item{back_html}{Back-cover HTML including title, subtitle and contact information}
 
 \item{other_css}{Add extra css}
 

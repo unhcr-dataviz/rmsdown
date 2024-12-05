@@ -23,6 +23,15 @@ h1.subtitle {
   string-set: subtitle content(text);
 }
 
+h2.author {
+  string-set: name content(text);
+}
+
+h2.date {
+  string-set: date content(text);
+}
+
+
 // Page format
 @page {
   size: 210mm 297mm;
@@ -40,6 +49,9 @@ h1.subtitle {
 }
 .main .section-title {
   page: section-title;
+}
+.back-cover {
+  page: back-cover;
 }
 
 // Basic page layout
@@ -182,11 +194,50 @@ h1.subtitle {
   }
 }
 
-// TODO Backcover
+// Backcover style
+@page back-cover {
+  background-color: $primary;
+  background-image: var(--unhcr-logowhite);
+  background-position: 21mm 200mm;
+  background-size: 50mm;
+  background-repeat: no-repeat;
+  color: white;
+  @top-left {
+    content: none;
+    border: none;
+  }
+  @top-center {
+    content: none;
+    border: none;
+  }
+  @top-right {
+    content: none;
+    border: none;
+  }
+  @bottom-center {
+    content: none;
+  }
+}
+
+.back-title:after {
+  content: string(title);
+}
+.back-subtitle:after {
+  content: string(subtitle);
+}
+.back-name:after {
+  content: string(name);
+}
+.back-date:after {
+  content: string(date);
+}
 
 // Breaks
 .front-page {
   break-after: page !important;
+}
+.back-cover {
+  break-before: left;
 }
 .level1,
 .level1 > .level2 {
@@ -304,6 +355,10 @@ a[href^="http"]:not([class="uri"])::after {
 .main a.front-matter-ref[href^="#"]:not([class^="footnote-"]):not([href*=":"])::after {
   content: " (page " target-counter(attr(href), page, lower-roman) ")";
 }
+.back-link a::after {
+  content: none !important;
+}
+
 
 // Blockquote
 blockquote {

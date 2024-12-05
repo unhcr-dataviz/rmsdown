@@ -2,6 +2,7 @@
 #'
 #' @param front_img Cover image
 #' @param img_to_dark Darken cover image
+#' @param back_html Back-cover HTML including title, subtitle and contact information
 #' @param other_css Add extra css
 #' @param toc Table of content
 #' @param toc_depth Table of content depth
@@ -13,6 +14,7 @@
 paged_report <- function(
     front_img = NULL,
     img_to_dark = FALSE,
+    back_html = TRUE,
     other_css = NULL,
     toc = TRUE,
     toc_depth = 3,
@@ -88,11 +90,20 @@ paged_report <- function(
     magick::image_write(front_img_ok, front_img, format = "jpg")
   }
 
+  # html back-cover
+  if (back_html) {
+    back_html <-
+      pkg_resource("html/back_cover.html")
+  } else {
+    back_html <- NULL
+  }
+
   # template
   pagedown::html_paged(
     theme = paged_theme,
     css = c(paged_report_css, other_css),
     front_cover = front_img,
+    includes = list(after_body = back_html),
     toc = toc,
     toc_depth = toc_depth,
     number_sections = number_sections,

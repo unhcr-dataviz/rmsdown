@@ -1,0 +1,26 @@
+<div class="back-cover">
+  <div class="back-title fs-1"></div>
+  <div class="back-subtitle fs-1 text-uppercase fw-bold"></div>
+  <div class="back-date text-uppercase fs-5 mt-5"></div>
+  <div class="back-footer position-absolute bottom-0 start-0">
+    <div class="back-link mb-5"><a class="text-warning" href="http://www.unhcr.org/">www.unhcr.org</a></div>
+    <div class="back-info mb-1">For more information<br>please contact:</div>
+    <div class="back-name fw-bold"></div>
+    <div class="back-afil"></div>
+    <div class="back-email text-warning"></div>
+  </div>
+</div>
+<script>
+  let userAfil = document.querySelector('.front-page .author-afil')?.childNodes[0].nodeValue;
+  if (userAfil == undefined) {
+    null
+  } else {
+    document.querySelector('.back-afil').innerHTML = document.querySelector('.front-page .author-afil')?.childNodes[0].nodeValue;
+  }
+  let userEmail = document.querySelector('.front-page .email')?.childNodes[0].nodeValue;
+  if (userEmail == undefined) {
+    null
+  } else {
+    document.querySelector('.back-email').innerHTML = '<a href=mailto:"'+userEmail+'" style="color: var(--unhcr-white); text-decoration: none;">'+userEmail+'</a>';
+  }
+</script>

@@ -1,6 +1,11 @@
 ---
 title: "Results Monitoring Surveys"
 subtitle: "Country Year"
+date: "`r format(Sys.Date(),  '%B %Y')`"
+author:
+  - name: Contact Name
+    affiliation: Job title
+    email: email@unhcr.org
 output: 
   rmsdown::paged_report:
     front_img:
