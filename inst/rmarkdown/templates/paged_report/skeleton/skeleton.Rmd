@@ -10,6 +10,7 @@ output:
   rmsdown::paged_report:
     front_img:
     img_to_dark: false
+    self_contained: true
 paged-footnotes: true
 links-to-footnotes: true
 toc-title: "Contents"
