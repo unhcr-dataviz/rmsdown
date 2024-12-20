@@ -89,7 +89,7 @@ influenced the development of `rmsdown`.
 
 ## Contribution
 
-Contributions to `cccmdown` are highly valued. If you have suggestions,
+Contributions to `rmsdown` are highly valued. If you have suggestions,
 uncover bugs, or envision new features, kindly submit an [issue on
 GitHub](https://github.com/unhcr-dataviz/rmsdown/issues). To contribute
 code, don’t hesitate to fork the repository and create a pull request.
