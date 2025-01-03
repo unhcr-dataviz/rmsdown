@@ -17,9 +17,11 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/unhcr-dataviz/rmsdown/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/unhcr-dataviz/rmsdown/actions/workflows/R-CMD-check.yaml)
+<!-- [![CRAN status](https://www.r-pkg.org/badges/version/rmsdown)](https://CRAN.R-project.org/package=rmsdown) -->
 <!-- badges: end -->
 
-The `rmsdown` package provides an R Markdown template and style based on `pagedown`, allowing you to create high-quality PDFs that follow UNHCR brand recommendations for the Results Monitoring Surveys (RMS).
+The `rmsdown` package provides an R Markdown template and style based on `pagedown`, allowing you to create high-quality PDFs that follow **UNHCR brand recommendations** for the Results Monitoring Surveys (RMS).
 
 ## Installation
 
@@ -78,6 +80,9 @@ df_percent <- data.frame(
 )
 
 simple_bar_chart(df_percent, cat = "category", val = "value")
+```
+
+```{r child="man/rmdfragments/unhcr_tools.Rmd"}
 ```
 
 ## Acknowledgements

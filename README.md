@@ -7,11 +7,13 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/unhcr-dataviz/rmsdown/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/unhcr-dataviz/rmsdown/actions/workflows/R-CMD-check.yaml)
+<!-- [![CRAN status](https://www.r-pkg.org/badges/version/rmsdown)](https://CRAN.R-project.org/package=rmsdown) -->
 <!-- badges: end -->
 
 The `rmsdown` package provides an R Markdown template and style based on
-`pagedown`, allowing you to create high-quality PDFs that follow UNHCR
-brand recommendations for the Results Monitoring Surveys (RMS).
+`pagedown`, allowing you to create high-quality PDFs that follow **UNHCR
+brand recommendations** for the Results Monitoring Surveys (RMS).
 
 ## Installation
 
@@ -80,6 +82,22 @@ df_percent <- data.frame(
 
 simple_bar_chart(df_percent, cat = "category", val = "value")
 ```
+
+## Additional UNHCR Tools
+
+- [**unhcrthemes**](https://github.com/unhcr-dataviz/unhcrthemes): UNHCR
+  branded ggplot2 theme and color palettes
+- [**unhcrdown**](https://github.com/unhcr-dataviz/unhcrdown): UNHCR
+  templates for R Markdown
+- [**refugees**](https://github.com/PopulationStatistics/refugees):
+  Access to [UNHCR Refugee Data
+  Finder](https://www.unhcr.org/refugee-statistics) API
+- [**quarto-html-unhcr**](https://github.com/unhcr-dataviz/quarto-html-unhcr):
+  Quarto extension for UNHCR branded HTML documents
+- [**quarto-revealjs-unhcr**](https://github.com/unhcr-dataviz/quarto-revealjs-unhcr):
+  Quarto extension for UNHCR branded presentations
+- [**Data Visualization Platform**](https://dataviz.unhcr.org/): UNHCR’s
+  data visualization guidelines and tools
 
 ## Acknowledgements
 
