@@ -21,11 +21,19 @@ knitr::opts_chunk$set(
 <!-- [![CRAN status](https://www.r-pkg.org/badges/version/rmsdown)](https://CRAN.R-project.org/package=rmsdown) -->
 <!-- badges: end -->
 
-The `rmsdown` package provides an R Markdown template and style based on `pagedown`, allowing you to create high-quality PDFs that follow **UNHCR brand recommendations** for the Results Monitoring Surveys (RMS).
+Create high-quality, UNHCR-branded PDFs for Results Monitoring Surveys (RMS) with the `{rmsdown}` R package. This package leverages the `{pagedown}` framework to deliver consistent and professional reports aligned with **UNHCR’s brand guidelines**. Additionally, it includes a dedicated plot function for branded charts.
+
+## Features
+
+- A specialized R Markdown template for RMS reports
+- Custom CSS styling with Bootstrap 5 integration
+- A plot function for consistent and branded visualizations
+- Alignment with UNHCR’s branding and guidelines
+
 
 ## Installation
 
-You can install the development version of `rmsdown` from GitHub using the `pak` package:
+Install the development version of `{rmsdown}` from GitHub with:
 
 ```{r, eval = FALSE}
 # If pak is not yet installed, uncomment the following line:
@@ -34,9 +42,11 @@ pak::pkg_install("unhcr-dataviz/rmsdown")
 ```
 ## Usage
 
-To start using the `rmsdown` template, create a new R Markdown document and specify the `rmsdown::paged_report` output format in the YAML header:
+### Getting Started
 
-```{r, eval = FALSE}
+To use the `{rmsdown}` template, specify the `rmsdown::paged_report` format in the YAML header of your R Markdown file:
+
+```yaml
 ---
 title: "Results Monitoring Surveys"
 subtitle: "Country Year"
@@ -44,16 +54,17 @@ output: rmsdown::paged_report
 ---
 ```
 
-You can also open a `rmsdown::paged_report` template using **RStudio**:
+### Creating a New Document in RStudio
 
-1. Click the "File" menu then "New File" and choose "R Markdown".
-2. In the "From Template" tab, choose the **RMS Paged Report** built-in template.
+1. File → New File → R Markdown
+2. Select “From Template”
+3. Choose the **RMS Paged Report** template
 
-### CSS Classes
+### Custom CSS Classes
 
-The `rmsdown` template uses Bootstrap 5 for styling. You can refer to the [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for guidance on using CSS classes.
+The `{rmsdown}` template incorporates Bootstrap 5 for styling. Refer to the [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for details on available CSS classes.
 
-Additionally, there is a specific format for creating section blue pages:
+For section-specific styling, use the following format:
 
 ```{r, eval = FALSE}
 
@@ -63,7 +74,7 @@ Additionally, there is a specific format for creating section blue pages:
 
 ## The Forced Displacement Survey
 
-Lorem ipsum...
+The following content starts here.
 
 ```
 
@@ -87,11 +98,11 @@ simple_bar_chart(df_percent, cat = "category", val = "value")
 
 ## Acknowledgements
 
-We extend our gratitude to the creators of the [`pagedown`](https://github.com/rstudio/pagedown) package that influenced the development of `rmsdown`.
+We extend our gratitude to the creators of the [`pagedown`](https://github.com/rstudio/pagedown) package that influenced the development of `{rmsdown}`.
 
-## Contribution
+## Contribution and Code of Conduct
 
-Contributions to `rmsdown` are highly valued. If you have suggestions, uncover bugs, or envision new features, kindly submit an [issue on GitHub](https://github.com/unhcr-dataviz/rmsdown/issues). To contribute code, don't hesitate to fork the repository and create a pull request.
+Contributions to `{rmsdown}` are highly valued. To ensure a welcoming and inclusive community, we follow our [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). If you have suggestions, uncover bugs, or envision new features, kindly submit an [issue on GitHub](https://github.com/unhcr-dataviz/rmsdown/issues).
 
 ## License
 
