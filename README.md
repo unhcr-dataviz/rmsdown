@@ -7,7 +7,7 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/unhcr-dataviz/rmsdown/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/unhcr-dataviz/rmsdown/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/vidonne/rmsdown/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/vidonne/rmsdown/actions/workflows/R-CMD-check.yaml)
 <!-- [![CRAN status](https://www.r-pkg.org/badges/version/rmsdown)](https://CRAN.R-project.org/package=rmsdown) -->
 <!-- badges: end -->
 
@@ -31,7 +31,7 @@ Install the development version of `{rmsdown}` from GitHub with:
 ``` r
 # If pak is not yet installed, uncomment the following line:
 # install.packages("pak")
-pak::pkg_install("unhcr-dataviz/rmsdown")
+pak::pkg_install("vidonne/rmsdown")
 ```
 
 ## Usage
@@ -93,16 +93,16 @@ simple_bar_chart(df_percent, cat = "category", val = "value")
 
 ## Additional UNHCR Tools
 
-- [**unhcrthemes**](https://github.com/unhcr-dataviz/unhcrthemes): UNHCR
+- [**unhcrthemes**](https://github.com/vidonne/unhcrthemes): UNHCR
   branded ggplot2 theme and color palettes
-- [**unhcrdown**](https://github.com/unhcr-dataviz/unhcrdown): UNHCR
-  templates for R Markdown
+- [**unhcrdown**](https://github.com/vidonne/unhcrdown): UNHCR templates
+  for R Markdown
 - [**refugees**](https://github.com/PopulationStatistics/refugees):
   Access to [UNHCR Refugee Data
   Finder](https://www.unhcr.org/refugee-statistics) API
-- [**quarto-html-unhcr**](https://github.com/unhcr-dataviz/quarto-html-unhcr):
+- [**quarto-html-unhcr**](https://github.com/vidonne/quarto-html-unhcr):
   Quarto extension for UNHCR branded HTML documents
-- [**quarto-revealjs-unhcr**](https://github.com/unhcr-dataviz/quarto-revealjs-unhcr):
+- [**quarto-revealjs-unhcr**](https://github.com/vidonne/quarto-revealjs-unhcr):
   Quarto extension for UNHCR branded presentations
 - [**Data Visualization Platform**](https://dataviz.unhcr.org/): UNHCR’s
   data visualization guidelines and tools
@@ -119,10 +119,9 @@ Contributions to `{rmsdown}` are highly valued. To ensure a welcoming
 and inclusive community, we follow our [Contributor Code of
 Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html).
 If you have suggestions, uncover bugs, or envision new features, kindly
-submit an [issue on
-GitHub](https://github.com/unhcr-dataviz/rmsdown/issues).
+submit an [issue on GitHub](https://github.com/vidonne/rmsdown/issues).
 
 ## License
 
 This package is distributed under the [MIT
-License](https://github.com/unhcr-dataviz/rmsdown/blob/master/LICENSE.md).
+License](https://github.com/vidonne/rmsdown/blob/master/LICENSE.md).

@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/unhcr-dataviz/rmsdown/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/unhcr-dataviz/rmsdown/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/vidonne/rmsdown/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/vidonne/rmsdown/actions/workflows/R-CMD-check.yaml)
 <!-- [![CRAN status](https://www.r-pkg.org/badges/version/rmsdown)](https://CRAN.R-project.org/package=rmsdown) -->
 <!-- badges: end -->
 
@@ -38,7 +38,7 @@ Install the development version of `{rmsdown}` from GitHub with:
 ```{r, eval = FALSE}
 # If pak is not yet installed, uncomment the following line:
 # install.packages("pak")
-pak::pkg_install("unhcr-dataviz/rmsdown")
+pak::pkg_install("vidonne/rmsdown")
 ```
 ## Usage
 
@@ -102,8 +102,8 @@ We extend our gratitude to the creators of the [`pagedown`](https://github.com/r
 
 ## Contribution and Code of Conduct
 
-Contributions to `{rmsdown}` are highly valued. To ensure a welcoming and inclusive community, we follow our [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). If you have suggestions, uncover bugs, or envision new features, kindly submit an [issue on GitHub](https://github.com/unhcr-dataviz/rmsdown/issues).
+Contributions to `{rmsdown}` are highly valued. To ensure a welcoming and inclusive community, we follow our [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). If you have suggestions, uncover bugs, or envision new features, kindly submit an [issue on GitHub](https://github.com/vidonne/rmsdown/issues).
 
 ## License
 
-This package is distributed under the [MIT License](https://github.com/unhcr-dataviz/rmsdown/blob/master/LICENSE.md).
+This package is distributed under the [MIT License](https://github.com/vidonne/rmsdown/blob/master/LICENSE.md).

@@ -5,8 +5,8 @@ Authors@R:
     person("Cedric", "Vidonne", , "vidonne@unhcr.org", role = c("aut", "cre"))
 Description: Produce standard RMS report format and plots.
 License: MIT + file LICENSE
-URL: https://github.com/unhcr-dataviz/rmsdown
-BugReports: https://github.com/unhcr-dataviz/rmsdown/issues
+URL: https://github.com/vidonne/rmsdown
+BugReports: https://github.com/vidonne/rmsdown/issues
 Imports: 
     bslib,
     ggplot2,
@@ -17,4 +17,4 @@ Imports:
     unhcrthemes
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+Config/roxygen2/version: 8.1.0
